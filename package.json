@@ -1,0 +1,15 @@
+{
+  "name": "ccbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "IP",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "request": "2.81.0"
+  }
+}
