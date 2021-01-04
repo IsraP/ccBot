@@ -45,6 +45,7 @@ client.once("ready", () => {
     console.log("we in babyyyy");
 });
 
+
 client.on("message", message => {
     if (message.content.startsWith(prefix) && !message.author.bot)
         tratarComandos();
