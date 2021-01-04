@@ -56,4 +56,4 @@ client.on("message", message => {
     }
 });
 
-client.login("process.env.token"); // Ultima linha em
+client.login(process.env.token); // Ultima linha em
