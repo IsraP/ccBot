@@ -34,6 +34,7 @@ Funcoes: {
     }
 }
 
+
 const disc = require('discord.js');
 
 const client = new disc.Client();
