@@ -1,5 +1,7 @@
 Funcoes: {
     function encontrarPeriodo(msg) {
+        if(msg.toLowerCase().includes("f"))
+            return 10;
         for (i = 1; i < 9; i++)
             if (msg.includes(i))
                 return i;
@@ -24,7 +26,7 @@ Funcoes: {
 
     function darCargo(periodo, membro) {
         let periodoAnterior = hasPeriodo(membro);
-        let periodoRole = membro.guild.roles.cache.find(role => role.name === `${periodo}º Periodo`);
+        let periodoRole = periodo != 10? membro.guild.roles.cache.find(role => role.name === `${periodo}º Periodo`) : membro.guild.roles.cache.find(role => role.name === 'Formado');
 
         if (periodoAnterior != null) {
             membro.roles.remove(periodoAnterior).catch(console.error);
