@@ -17,6 +17,10 @@ Funcoes: {
             }
         }
 
+        role = membro.guild.roles.cache.findKey(role => role.name === 'Formado');
+        if(membro.roles.cache.has(role))
+            return role;
+
         return null;
     }
 
